@@ -21,7 +21,20 @@ def calculate_cost():
     child_name = input("Please enter your child's name: ")
     amount_of_hours_charge = input(f"How many hours would you like Little {child_name}"
                                          f" to stay for?:\n ")
-    cost
+    cost = float(amount_of_hours_charge) * 12
+    yes_no = input(f"The total cost for your child's daycare today is ${cost}. Is that okay? (yes/no): ").lower()
+    for amount_of_hours_charge in range(1):
+        if yes_no.lower() == "yes":
+            print("Thank you for your purchase!")
+        elif yes_no.lower() == "no":
+            print("Thank you for your time!")
+            break
+        else:
+            print("Invalid answer. Please enter yes or no!")
+    choice = 0
+
+
+def print_off():
 
 
 while choice != 5:
@@ -51,7 +64,9 @@ elif choice == 3:
     calculate_cost()
     choice = 0
 elif choice == 4:
-    printRoll()
+    print_roll()
     choice = 0
+elif choice == 5:
+    print("Thank you for using MGS Childcare! Goodbye!")
 else:
-    print("Goodbye!")
+    print("Please enter a valid number between 1-5!")

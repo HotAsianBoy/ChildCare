@@ -1,4 +1,3 @@
-choice = 0
 Child_Care_Kids_List = []
 
 
@@ -29,7 +28,7 @@ while choice != 5:
     print("5 Exit the system")
     print()
     choice = int(input("Enter your choice (number between 1 and 5): "))
-    break
+
 print()
 
 
