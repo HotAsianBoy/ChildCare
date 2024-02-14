@@ -1,4 +1,20 @@
 choice = 0
+Child_Care_Kids_List = []
+
+
+def drop_off():
+    child_name = input(print("Please enter your child's name: "))
+    amount_of_hours_in_daycare = int(input(print("\nHow Many Hours Do You Want Your Child In Day Care For?:\n ")))
+    yes_or_no = input(print(f"Your Child's Names Is {child_name} and they will\n"
+                            f" be in childcare for {amount_of_hours_in_daycare} Hour\n"
+                            f"You Will Have To Pay {amount_of_hours_in_daycare * 12} Dollars\n"
+                            f" For Your Child To be In ChildCare Today Y Or N?:"))
+    if yes_or_no.upper() == "Y":
+        Child_Care_Kids_List.append(child_name)
+        print("Thank you!")
+    else:
+        print("No Problem!")
+
 
 while choice != 5:
     print("-----------------------------------------------------------------------")
@@ -13,11 +29,12 @@ while choice != 5:
     print("5 Exit the system")
     print()
     choice = int(input("Enter your choice (number between 1 and 5): "))
+    break
 print()
 
 
 if choice == 1:
-    dropOff = (int(input("Please enter your child's name: ")))
+    drop_off()
 
 elif choice == 2:
     pickUp()

@@ -1,5 +1,5 @@
 class Child:
-    def __init__(self, name):
+    def name(self, name):
         self.name = name
         self.checked_in = False
 
