@@ -1,5 +1,5 @@
 Child_Care_Kids_List = []
-
+choice = 0
 
 def drop_off():
     child_name = input(print("Please enter your child's name: "))
@@ -32,16 +32,16 @@ while choice != 5:
 print()
 
 
-if choice == 1:
+if choice == "1":
     drop_off()
 
-elif choice == 2:
+elif choice == "2":
     pickUp()
 
-elif choice == 3:
+elif choice == "3":
     calcCost()
 
-elif choice == 4:
+elif choice == "4":
     printRoll()
 
 else:
