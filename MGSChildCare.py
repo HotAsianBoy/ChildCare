@@ -1,3 +1,7 @@
+"""MGS Childcare
+Looping error, fixed in v2"""
+
+
 Child_Care_Kids_List = []
 choice = 0
 

@@ -1,3 +1,9 @@
+"""MGS Childcare v2
+Fixed loop, and finished the program to drop off,
+pick up, calculate costs and print the child roll,
+in a simple format."""
+
+
 def menu():
     choice = ""
     while choice != 5:
